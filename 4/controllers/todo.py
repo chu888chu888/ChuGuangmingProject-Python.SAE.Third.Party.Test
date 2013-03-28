@@ -23,7 +23,6 @@ class Spider:
 
     def analysis_html(self, htmlSource):
         import lxml.html.soupparser as soupparser
-
         #htmlSource = unicode(htmlSource, 'utf-8', errors='ignore')
         dom = soupparser.fromstring(htmlSource)
         Url = dom.xpath('//*[@id="RecentBlogs"]/ul[1]/li/div/h3/a[@href]')

@@ -1,7 +1,0 @@
----
-name: chinapython
-version: 4
-libraries:
-- name: lxml
-  version: "2.3.4"
-...

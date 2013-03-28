@@ -8,13 +8,3 @@ db = web.database(dbn='mysql', user=sae.const.MYSQL_USER, pw=sae.const.MYSQL_PAS
 #模板设定
 render = web.template.render('templates/', cache=False)
 
-config = web.storage(
-    email='oooo@qq.com',
-    site_name='任务跟踪',
-    site_desc='',
-    static='/static',
-)
-
-web.template.Template.globals['config'] = config
-web.template.Template.globals['render'] = render
-
